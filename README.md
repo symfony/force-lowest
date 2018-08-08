@@ -18,3 +18,11 @@ composer require symfony/force-lowest ~4.1.0
 Replace the version number by the lowest one you'd like for Symfony packages.
 To be effective, you should lock both the major and the minor version numbers
 (use `~4.1.0` instead of `^4.1.0` as shown in the example above.)
+
+Versioning Policy
+------------------
+
+When version `X.Y.0` of [symfony/symfony](https://github.com/symfony/symfony) is
+released, the conflicting components is updated to the list of components of this
+new version (new ones are added, old ones removed, branch-alias updated) and
+version `X.Y+1.0` of `symfony/force-lowest` is tagged.
