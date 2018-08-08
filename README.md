@@ -12,7 +12,9 @@ Usage
 Use the Composer command line:
 
 ```bash
-composer require symfony/force-lowest v4.1
+composer require symfony/force-lowest ~4.1.0
 ```
 
 Replace the version number by the lowest one you'd like for Symfony packages.
+To be effective, you should lock both the major and the minor version numbers
+(use `~4.1.0` instead of `^4.1.0` as shown in the example above.)
